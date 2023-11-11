@@ -10,6 +10,7 @@ html{
 }
 body{
 	margin: 0 auto;
+	overflow: hidden;
 }
 h1{
 	margin: 0;
@@ -32,11 +33,11 @@ h1{
 	padding-right: 20px;
 }
 .headerText{
-	width: 690px;
+	width: 700px;
 	height: 156px;
-	flex-shrink: 0;
+
 	position: relative;
-	top: 42px;
+	margin-top: 43px;
 }
 .mainHeader{
 	font-family: Inter;
@@ -44,6 +45,8 @@ h1{
 	font-style: normal;
 	font-weight: 900;
 	line-height: 102.595%;
+
+	margin: 0;
 }
 .white{
 	color: #FFF;
@@ -53,19 +56,28 @@ h1{
 }
 
 .vectorsAndImage{
+	width: 700px;
+	height: 911.5px;
+
 	position: absolute;
-	top: 0;
+	top: 1px;
 	right: 20px;
 }
 .lakeSVG{
 	position: absolute;
-	top: 54px;
-	right: -42px;
+	top: 132px;
+	right: 30.52px;
+
+	opacity: 0.9;
+	filter: drop-shadow(0px 0px 35px rgba(255, 67, 67, 0.30));
 }
 .arrowSVG{
 	position: absolute;
-	top: 174px;
+	top: 170.5px;
 	right: 0;	
+
+	width: 699.5px;
+	height: 758.41px;	
 }
 .image{
 	position: absolute;
@@ -73,11 +85,81 @@ h1{
 	right: 34.77px;	
 	z-index: 2;
 }
+.AboutExpert{
+	position: relative;
+	display: flex;
+	width: 500px;
+	height: 151px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 8px;
+
+	top: 535px;
+	left: 100px;
+}
+.expertName{
+	width: 400px;
+	color: #FF4343;
+	/* Drop Shadow */
+	text-shadow: 0px 0px 64px rgba(255, 67, 67, 0.30);
+	font-family: Inter;
+	font-size: 56px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: 102.595%; /* 57.453px */
+	margin: 0;
+
+	position: absolute;
+	top: 0;
+	z-index: 3;
+}
+.buttonExp{
+	display: flex;
+	padding: 4px 8px;
+	justify-content: center;
+	align-items: center;
+	gap: 4px;
+
+	border-radius: 14px;
+	background: #FFF;
+
+	position: absolute;
+	z-index: 3;
+	bottom: 0;
+
+	outline: none;
+	border: none;
+    cursor: pointer;	
+}
+.buttonExp:hover{
+	cursor: pointer;
+}
+.exc{
+	width: 19px;
+	height: 19px;
+}
+.buttonText{
+/*	width: 145px;*/
+	height: 21px;
+	box-sizing: border-box;
+	color: #FF4343;
+	text-align: right;
+	font-family: Inter;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 102.595%;
+
+	margin: 0;
+}
 
 .dialogRectangles{
-	margin-top: 30px;
 	position: relative;
+	left: 0;
+	margin-top: 30px;
 	width: 660px;
+	height: 333px;
 
 	display: flex;
 	flex-direction: column;
@@ -90,7 +172,6 @@ h1{
 }
 .rect8{
 	position: absolute;
-	top: 30px;
 }
 .text1{
 	width: 385px;
@@ -104,7 +185,7 @@ h1{
 
 	position: absolute;
 	margin: 0;
-	top: 45px;
+	top: 15px;
 	right: 175px;
 	z-index: 2;
 }
@@ -120,7 +201,7 @@ h1{
 
 	position: absolute;
 	margin: 0;
-	top: 116px;
+	top: 86px;
 	right: 175px;
 	z-index: 2;
 }
@@ -133,7 +214,6 @@ h1{
 }
 .rect9{
 	position: absolute;
-	top: 30px;
 }
 .text3{
 	width: 385px;
@@ -147,7 +227,130 @@ h1{
 
 	position: absolute;
 	margin: 0;
-	top: 45px;
+	top: 15px;
 	right: 15px;
 	z-index: 2;
+}
+
+/*you Will Get*/
+.youWillGet{
+	position: relative;
+	margin-top: 141px;
+	left: 0;
+
+	display: inline-flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 15px;
+}
+.GetText{
+	height: 27px;
+	align-self: stretch;
+	color: #FFF;
+	font-family: Inter;
+	font-size: 23px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: 102.595%; 
+
+	margin: 0;
+}
+.allAdvantages{
+	position: relative;
+	width: 898px;
+	height: 72px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	gap: 30px;
+}
+.advantage{
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+}
+.first{
+	width: 258px;
+	height: 54px;	
+}
+.second{
+	width: 286px;
+	height: 72px;
+}
+.third{
+	width: 294px;
+	height: 72px;
+}
+.advText1{
+/*	width: 236px;*/
+	color: #FFF;
+	font-family: Inter;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 102.595%; 
+
+	margin: 0;
+}
+
+.downloadButton{
+	position: relative;
+	margin-top: 50px;
+
+	width: 560px;
+	height: 96px;
+}
+.downButton{
+	width: 560px;
+	height: 96px;
+	padding-bottom: 9px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+
+	border-radius: 19px;
+	background: #FFC6C6;
+
+	box-shadow: 0px 0px 45px 13px rgba(255, 67, 67, 0.30);
+
+	outline: none;
+	border: none;
+    cursor: pointer;
+}
+.frontButton{
+	display: flex;
+	width: 560px;
+	padding: 13px 90px;
+	box-sizing: border-box;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+
+	border-radius: 19px;
+	background: #FFF;
+}
+.frontButtonText{
+	width: 380px;
+	color: #000;
+	text-align: center;
+	font-family: Inter;
+	font-size: 38px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 102.595%; 
+
+	margin: 0;
+}
+.textUnderDownloadBtn{
+	color: #000;
+	text-align: center;
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 102.595%; 
+
+	margin: 0;
 }
