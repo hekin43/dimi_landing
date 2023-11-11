@@ -153,6 +153,59 @@ h1{
 
 	margin: 0;
 }
+/*pop-up window*/
+.popUpWindow{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	width: 559px;
+	height: 281px;
+	background: #FFF;
+	padding: 15px;
+	border-radius: 14px;
+	bottom: 226px;
+	right: 41px;
+	z-index: 9;
+	box-sizing: border-box;
+}
+.headerTextInPopUp{
+	color: #FF4343;
+	font-family: Inter;
+	font-size: 37px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: 102.595%;
+	margin: 0;
+}
+.anotherTextInPopUp{
+	color: #000;
+	font-family: Inter;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin: 0;
+	padding-top: 5px;
+}
+.listStyle{
+	margin: 0;
+	padding-inline-start: 50px;
+}
+.union{
+	position: absolute;
+	top: 17.5px;
+	right: 16.5px;
+	cursor: pointer;
+
+	width: 33px;
+	height: 33.5px;
+	z-index: 10;
+}
+.hidden{
+	opacity: 0;
+	display: none;
+}
+
 
 .dialogRectangles{
 	position: relative;
@@ -282,7 +335,6 @@ h1{
 	height: 72px;
 }
 .advText1{
-/*	width: 236px;*/
 	color: #FFF;
 	font-family: Inter;
 	font-size: 18px;
