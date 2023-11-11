@@ -1,1 +1,28 @@
+html{
+	max-height: 100%;
+	max-width: 100%;
+	width: 1920px;
+	height: 1080px;
+	background: #000;
 
+	margin: 0;
+	padding: 0;
+}
+.headerText{
+	width: 690px;
+	height: 156px;
+	flex-shrink: 0;
+}
+.mainHeader{
+	font-family: Inter;
+	font-size: 50px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: 102.595%;
+}
+.white{
+	color: #FFF;
+}
+.red{
+	color: #FF4343;
+}
