@@ -2,16 +2,41 @@ html{
 	max-height: 100%;
 	max-width: 100%;
 	width: 1920px;
-	height: 1080px;
+	height: 970px;
 	background: #000;
 
 	margin: 0;
 	padding: 0;
 }
+body{
+	margin: 0 auto;
+}
+h1{
+	margin: 0;
+}
+.background{
+	max-height: 100%;
+	max-width: 100%;
+	width: 1920px;
+	height: 970px;
+
+	display: flex;
+	justify-content: center;
+}
+.wrapper-background{
+	width: 1200px;
+	margin: 0;
+	position: relative;
+	box-sizing: border-box;
+	padding-left: 20px;
+	padding-right: 20px;
+}
 .headerText{
 	width: 690px;
 	height: 156px;
 	flex-shrink: 0;
+	position: relative;
+	top: 42px;
 }
 .mainHeader{
 	font-family: Inter;
@@ -25,4 +50,27 @@ html{
 }
 .red{
 	color: #FF4343;
+}
+
+.vectorsAndImage{
+	position: absolute;
+/*	height: 500px;*/
+	top: 0;
+	right: 20px;
+}
+.lakeSVG{
+	position: absolute;
+	top: 54px;
+	right: -42px;
+}
+.arrowSVG{
+	position: absolute;
+	top: 174px;
+	right: 0;	
+}
+.image{
+	position: absolute;
+	top: 0;
+	right: 34.77px;	
+	z-index: 2;
 }
