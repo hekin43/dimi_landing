@@ -170,7 +170,7 @@ h1{
 	flex-direction: column;
 	position: absolute;
 	width: 559px;
-	height: 435px;
+/* 	height: 435px; */
 	background: #FFF;
 	padding: 15px;
 	border-radius: 14px;
