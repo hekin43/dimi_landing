@@ -130,7 +130,8 @@ h1{
 
 	outline: none;
 	border: none;
-    cursor: pointer;	
+    cursor: pointer;
+    transition: all 0.5s ease-out;	
 }
 .buttonExp:hover{
 	cursor: pointer;
@@ -167,6 +168,7 @@ h1{
 	right: 41px;
 	z-index: 9;
 	box-sizing: border-box;
+	transition: all 0.5s ease-out;
 }
 .headerTextInPopUp{
 	color: #FF4343;
@@ -200,6 +202,7 @@ h1{
 	width: 33px;
 	height: 33.5px;
 	z-index: 10;
+	transition: all 0.5s ease-out;
 }
 .hidden{
 	opacity: 0;
@@ -355,7 +358,9 @@ h1{
 .downButton{
 	width: 560px;
 	height: 96px;
+	padding: 0;
 	padding-bottom: 9px;
+	box-sizing: border-box;
 
 	display: flex;
 	justify-content: space-between;
@@ -378,10 +383,10 @@ h1{
 	box-sizing: border-box;
 	justify-content: center;
 	align-items: center;
-	gap: 10px;
 
 	border-radius: 19px;
 	background: #FFF;
+	transition: all 0.3s ease-out;
 }
 .frontButtonText{
 	width: 380px;
@@ -394,6 +399,7 @@ h1{
 	line-height: 102.595%; 
 
 	margin: 0;
+	transition: all 0.2s ease-out;
 }
 .textUnderDownloadBtn{
 	color: #000;
@@ -405,4 +411,20 @@ h1{
 	line-height: 102.595%; 
 
 	margin: 0;
+}
+
+.downButton:hover .frontButton .frontButtonText{
+	color: #FF4343;
+}
+
+.downButton:active .frontButton{
+	background: #FF4343;
+}
+.downButton:hover:active .frontButtonText{
+	transition: all 0.2s ease-out;
+	color: #FFF;
+}
+
+a{
+	text-decoration: none;
 }

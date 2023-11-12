@@ -9,3 +9,4 @@ expertBtn.addEventListener("click", function() {
 cross.addEventListener("click", function() {
 	popUpWindow.classList.add('hidden');
 })
+
