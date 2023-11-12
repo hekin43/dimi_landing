@@ -354,6 +354,7 @@ h1{
 
 	width: 560px;
 	height: 96px;
+	z-index: 1;
 }
 .downButton{
 	width: 560px;
@@ -375,6 +376,7 @@ h1{
 	outline: none;
 	border: none;
     cursor: pointer;
+    z-index: 1;
 }
 .frontButton{
 	display: flex;
@@ -387,6 +389,7 @@ h1{
 	border-radius: 19px;
 	background: #FFF;
 	transition: all 0.3s ease-out;
+	z-index: 2;
 }
 .frontButtonText{
 	width: 380px;
@@ -400,6 +403,7 @@ h1{
 
 	margin: 0;
 	transition: all 0.2s ease-out;
+	z-index: 3;
 }
 .textUnderDownloadBtn{
 	color: #000;
@@ -411,6 +415,7 @@ h1{
 	line-height: 102.595%; 
 
 	margin: 0;
+	z-index: 3;
 }
 
 .downButton:hover .frontButton .frontButtonText{
@@ -427,4 +432,16 @@ h1{
 
 a{
 	text-decoration: none;
+	z-index: 1;
+}
+
+.arrows{
+	position: absolute;
+	top: 0;
+/*	left: 0;*/
+/*	right: 0;*/
+	z-index: 0;
+	width: 1920px;
+	height: 970px;
+	object-fit: scale-down;
 }
