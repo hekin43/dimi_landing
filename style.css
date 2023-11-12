@@ -1,0 +1,447 @@
+html{
+	max-height: 100%;
+	max-width: 100%;
+	width: 1920px;
+	height: 970px;
+	background: #000;
+
+	margin: 0;
+	padding: 0;
+}
+body{
+	margin: 0 auto;
+	overflow: hidden;
+}
+h1{
+	margin: 0;
+}
+.background{
+	max-height: 100%;
+	max-width: 100%;
+	width: 1920px;
+	height: 970px;
+
+	display: flex;
+	justify-content: center;
+}
+.wrapper-background{
+	width: 1200px;
+	margin: 0;
+	position: relative;
+	box-sizing: border-box;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.headerText{
+	width: 700px;
+	height: 156px;
+
+	position: relative;
+	margin-top: 43px;
+}
+.mainHeader{
+	font-family: Inter;
+	font-size: 50px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: 102.595%;
+
+	margin: 0;
+}
+.white{
+	color: #FFF;
+}
+.red{
+	color: #FF4343;
+}
+
+.vectorsAndImage{
+	width: 700px;
+	height: 911.5px;
+
+	position: absolute;
+	top: 1px;
+	right: 20px;
+}
+.lakeSVG{
+	position: absolute;
+	top: 132px;
+	right: 30.52px;
+
+	opacity: 0.9;
+	filter: drop-shadow(0px 0px 35px rgba(255, 67, 67, 0.30));
+}
+.arrowSVG{
+	position: absolute;
+	top: 170.5px;
+	right: 0;	
+
+	width: 699.5px;
+	height: 758.41px;	
+}
+.image{
+	position: absolute;
+	top: 0;
+	right: 34.77px;	
+	z-index: 2;
+}
+.AboutExpert{
+	position: relative;
+	display: flex;
+	width: 500px;
+	height: 151px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 8px;
+
+	top: 535px;
+	left: 100px;
+}
+.expertName{
+	width: 400px;
+	color: #FF4343;
+	/* Drop Shadow */
+	text-shadow: 0px 0px 64px rgba(255, 67, 67, 0.30);
+	font-family: Inter;
+	font-size: 56px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: 102.595%; /* 57.453px */
+	margin: 0;
+
+	position: absolute;
+	top: 0;
+	z-index: 3;
+}
+.buttonExp{
+	display: flex;
+	padding: 4px 8px;
+	justify-content: center;
+	align-items: center;
+	gap: 4px;
+
+	border-radius: 14px;
+	background: #FFF;
+
+	position: absolute;
+	z-index: 3;
+	bottom: 0;
+
+	outline: none;
+	border: none;
+    cursor: pointer;
+    transition: all 0.5s ease-out;	
+}
+.buttonExp:hover{
+	cursor: pointer;
+}
+.exc{
+	width: 19px;
+	height: 19px;
+}
+.buttonText{
+/*	width: 145px;*/
+	height: 21px;
+	box-sizing: border-box;
+	color: #FF4343;
+	text-align: right;
+	font-family: Inter;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 102.595%;
+
+	margin: 0;
+}
+/*pop-up window*/
+.popUpWindow{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	width: 559px;
+	height: 281px;
+	background: #FFF;
+	padding: 15px;
+	border-radius: 14px;
+	bottom: 226px;
+	right: 41px;
+	z-index: 9;
+	box-sizing: border-box;
+	transition: all 0.5s ease-out;
+}
+.headerTextInPopUp{
+	color: #FF4343;
+	font-family: Inter;
+	font-size: 37px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: 102.595%;
+	margin: 0;
+}
+.anotherTextInPopUp{
+	color: #000;
+	font-family: Inter;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin: 0;
+	padding-top: 5px;
+}
+.listStyle{
+	margin: 0;
+	padding-inline-start: 50px;
+}
+.union{
+	position: absolute;
+	top: 17.5px;
+	right: 16.5px;
+	cursor: pointer;
+
+	width: 33px;
+	height: 33.5px;
+	z-index: 10;
+	transition: all 0.5s ease-out;
+}
+.hidden{
+	opacity: 0;
+	display: none;
+}
+
+
+.dialogRectangles{
+	position: relative;
+	left: 0;
+	margin-top: 30px;
+	width: 660px;
+	height: 333px;
+
+	display: flex;
+	flex-direction: column;
+}
+.rectangle8{
+	position: relative;
+	width: 660px;
+	height: 189px;
+	flex-shrink: 0;
+}
+.rect8{
+	position: absolute;
+}
+.text1{
+	width: 385px;
+	color: #FFF;
+	text-align: right;
+	font-family: Inter;
+	font-size: 23px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: normal;
+
+	position: absolute;
+	margin: 0;
+	top: 15px;
+	right: 175px;
+	z-index: 2;
+}
+.text2{
+	width: 385px;
+	color: #FFF;
+	text-align: right;
+	font-family: Inter;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+
+	position: absolute;
+	margin: 0;
+	top: 86px;
+	right: 175px;
+	z-index: 2;
+}
+
+.rectangle9{
+	position: relative;
+	width: 500px;
+	height: 114px;
+	top: 30px;
+}
+.rect9{
+	position: absolute;
+}
+.text3{
+	width: 385px;
+	color: #FFF;
+	text-align: right;
+	font-family: Inter;
+	font-size: 23px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: normal;
+
+	position: absolute;
+	margin: 0;
+	top: 15px;
+	right: 15px;
+	z-index: 2;
+}
+
+/*you Will Get*/
+.youWillGet{
+	position: relative;
+	margin-top: 141px;
+	left: 0;
+
+	display: inline-flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 15px;
+}
+.GetText{
+	height: 27px;
+	align-self: stretch;
+	color: #FFF;
+	font-family: Inter;
+	font-size: 23px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: 102.595%; 
+
+	margin: 0;
+}
+.allAdvantages{
+	position: relative;
+	width: 898px;
+	height: 72px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	gap: 30px;
+}
+.advantage{
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+}
+.first{
+	width: 258px;
+	height: 54px;	
+}
+.second{
+	width: 286px;
+	height: 72px;
+}
+.third{
+	width: 294px;
+	height: 72px;
+}
+.advText1{
+	color: #FFF;
+	font-family: Inter;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 102.595%; 
+
+	margin: 0;
+}
+
+.downloadButton{
+	position: relative;
+	margin-top: 50px;
+
+	width: 560px;
+	height: 96px;
+	z-index: 1;
+}
+.downButton{
+	width: 560px;
+	height: 96px;
+	padding: 0;
+	padding-bottom: 9px;
+	box-sizing: border-box;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+
+	border-radius: 19px;
+	background: #FFC6C6;
+
+	box-shadow: 0px 0px 45px 13px rgba(255, 67, 67, 0.30);
+
+	outline: none;
+	border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+.frontButton{
+	display: flex;
+	width: 560px;
+	padding: 13px 90px;
+	box-sizing: border-box;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 19px;
+	background: #FFF;
+	transition: all 0.3s ease-out;
+	z-index: 2;
+}
+.frontButtonText{
+	width: 380px;
+	color: #000;
+	text-align: center;
+	font-family: Inter;
+	font-size: 38px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 102.595%; 
+
+	margin: 0;
+	transition: all 0.2s ease-out;
+	z-index: 3;
+}
+.textUnderDownloadBtn{
+	color: #000;
+	text-align: center;
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 102.595%; 
+
+	margin: 0;
+	z-index: 3;
+}
+
+.downButton:hover .frontButton .frontButtonText{
+	color: #FF4343;
+}
+
+.downButton:active .frontButton{
+	background: #FF4343;
+}
+.downButton:hover:active .frontButtonText{
+	transition: all 0.2s ease-out;
+	color: #FFF;
+}
+
+a{
+	text-decoration: none;
+	z-index: 1;
+}
+
+.arrows{
+	position: absolute;
+	top: 0;
+/*	left: 0;*/
+/*	right: 0;*/
+	z-index: 0;
+	width: 1920px;
+	height: 970px;
+	object-fit: scale-down;
+}
