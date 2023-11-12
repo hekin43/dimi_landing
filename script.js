@@ -14,6 +14,6 @@ document.addEventListener("click", (e) => {
 	const clickBtn = e.composedPath().includes(expertBtn);
 	const clickWindow = e.composedPath().includes(popUpWindow);
 	if ( !(clickBtn || clickWindow)) {
-		popUpWindow.classList.toggle('hidden');
+		popUpWindow.classList.add('hidden');
 	}	
 })
