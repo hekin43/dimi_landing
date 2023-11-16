@@ -5,7 +5,9 @@
 		padding-top: 20px;
 		padding-left: 21px;
 		padding-right: 21px;
-
+		
+		display: flex;
+    	flex-direction: column;
 		align-items: center;
 	}
 	.headerText{
@@ -149,40 +151,41 @@
 		right: auto;
 		z-index: 2;
 	}
-
+	.containerForButtonAndAdvantages{
+		display: flex;
+		flex-direction: column-reverse;
+	}
 /*you Will Get*/
 .youWillGet{
-	display: none;
-	opacity: 0;
-/*	position: relative;
-	margin-top: 141px;
+	position: relative;
+	margin-top: 10px;
 	left: 0;
 
-	display: inline-flex;
-	flex-direction: column;
-	align-items: flex-start;
-	gap: 15px;*/
+	display: flex;
+	gap: 10px;
 }
 .GetText{
-	height: 27px;
-	align-self: stretch;
-	color: #FFF;
-	font-family: Inter;
-	font-size: 23px;
-	font-style: normal;
-	font-weight: 900;
-	line-height: 102.595%; 
+	height: auto;
+	font-size: 15px;
 
 	margin: 0;
 }
+.ver1{
+	display: none;
+	opacity: 0;
+}
+.ver2{
+	display: block;
+	opacity: 1;
+}
 .allAdvantages{
 	position: relative;
-	width: 898px;
-	height: 72px;
+	width: 300px;
+/*	height: 72px;*/
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: flex-start;
-	gap: 30px;
+	gap: 10px;
 }
 .advantage{
 	display: flex;
@@ -190,24 +193,20 @@
 	gap: 10px;
 }
 .first{
-	width: 258px;
-	height: 54px;	
+	width: 300px;
+	height: 45px;	
 }
 .second{
-	width: 286px;
-	height: 72px;
+	width: 300px;
+	height: 45px;
 }
 .third{
-	width: 294px;
-	height: 72px;
+	width: 300px;
+	height: 45px;
 }
 .advText1{
 	color: #FFF;
-	font-family: Inter;
-	font-size: 18px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 102.595%; 
+	font-size: 15px;
 
 	margin: 0;
 }
@@ -281,5 +280,53 @@
 	margin: 0;
 	z-index: 3;
 }
+.popUpWindow{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	width: 300px;
+	height: auto;
+	background: #FFF;
+	padding: 10px;
+	border-radius: 14px;
+	bottom: -175px;
+	right: auto;
+	z-index: 9;
+	box-sizing: border-box;
+	transition: all 0.5s ease-out;
+}
+.hidden{
+	opacity: 0;
+	display: none;
+	z-index: 0;
+}
+.headerTextInPopUp{
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+.anotherTextInPopUp{
+	font-size: 12px;
+	padding-top: 0;
+}
+.header2TextInPopUp{
+	font-size: 12px;
+	padding-bottom: 10px;
+}
+	.listStyle{
+		margin: 0;
+		padding-inline-start: 0px;
+		list-style-type: none;
+	}
+	li::before{
+		content: "-"; /* Маркер списка */
+	    padding-right: 0.5em;
+	}
+	.union{
+		top: 10px;
+		right: 10px;
+
+		width: 21px;
+		height: 21px;
+	}
 
 }
