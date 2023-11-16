@@ -1,7 +1,6 @@
 html{
 	max-height: 100%;
 	max-width: 100%;
-	height: 970px;
 	background: #000;
 
 	margin: 0;
@@ -15,7 +14,6 @@ body::-webkit-scrollbar {
   width: 0.5em;
   background: #000;
   border-radius: 50px;
-/*  box-shadow: inset 0 0 0 4px #ccc;*/
 }
 
 body::-webkit-scrollbar-thumb {
@@ -29,7 +27,7 @@ h1{
 .background{
 	max-height: 100%;
 	max-width: 100%;
-	height: 970px;
+/*	height: 970px;*/
 
 	display: flex;
 	justify-content: center;
@@ -83,6 +81,7 @@ h1{
 }
 .arrowSVG{
 	position: absolute;
+	display: block;
 	top: 170.5px;
 	right: 0;	
 
@@ -91,8 +90,8 @@ h1{
 }
 .image{
 	position: absolute;
-	top: 0;
-	right: 34.77px;	
+	top: 2px;
+	right: 30.77px;	
 	z-index: 2;
 }
 .AboutExpert{
@@ -189,6 +188,16 @@ h1{
 	line-height: 102.595%;
 	margin: 0;
 }
+.header2TextInPopUp{
+	color: #000;
+	font-family: Inter;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin: 0;
+	padding-bottom: 20px;
+}
 .anotherTextInPopUp{
 	color: #000;
 	font-family: Inter;
@@ -238,6 +247,12 @@ h1{
 }
 .rect8{
 	position: absolute;
+	display: block;
+	opacity: 1;
+}
+.rect8-2{
+	display: none;
+	opacity: 0;
 }
 .text1{
 	width: 385px;
@@ -279,7 +294,13 @@ h1{
 	top: 30px;
 }
 .rect9{
+	display: block;
+	opacity: 1;
 	position: absolute;
+}
+.rect9-2{
+	display: none;
+	opacity: 0;
 }
 .text3{
 	width: 385px;
@@ -454,4 +475,12 @@ a{
 	width: 2562px;
 	height: 1106px;
 	object-fit: none;
+}
+.ver1{
+	display: block;
+	opacity: 1;
+}
+.ver2{
+	display: none;
+	opacity: 0;
 }
