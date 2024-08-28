@@ -328,5 +328,44 @@
 		width: 21px;
 		height: 21px;
 	}
+	.GetMaterial{
+		width: 300px;
+		height: 221px;
+		padding: 10px;
+		box-sizing: border-box;
 
+		border-radius: 14px;
+		background: #FFF;
+
+		/* Drop Shadow */
+		box-shadow: 0px 0px 64px 13px rgba(255, 67, 67, 0.30);
+
+		position: absolute;
+		bottom: 210px;
+		z-index: 3;
+	}
+	.textInGetMaterialPopUp{
+		width: 280px;
+		font-size: 15px;
+		padding-bottom: 10px;
+	}
+	.form_input{
+		width: 280px;
+		height: 47px;
+
+		border-radius: 10px;
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	.buttonSubmit{
+		width: 280px;
+		height: 47px;
+		padding: 13px 50px;
+
+		border-radius: 10px;
+	}
+	.submitButtonText{
+		font-size: 20px;
+		width: auto;
+	}
 }

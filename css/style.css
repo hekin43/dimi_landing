@@ -407,8 +407,8 @@ h1{
 
 	outline: none;
 	border: none;
-    cursor: pointer;
-    z-index: 1;
+  cursor: pointer;
+  z-index: 1;
 }
 .frontButton{
 	display: flex;
@@ -482,4 +482,96 @@ a{
 .ver2{
 	display: none;
 	opacity: 0;
+}
+.GetMaterial{
+	width: 560px;
+	height: 339px;
+	padding: 15px;
+	box-sizing: border-box;
+
+	border-radius: 19px;
+	background: #FFF;
+
+	/* Drop Shadow */
+	box-shadow: 0px 0px 64px 13px rgba(255, 67, 67, 0.30);
+
+	position: absolute;
+	bottom: 0px;
+	z-index: 3;
+}
+.textInGetMaterialPopUp{
+	width: 530px;
+	color: #FF4343;
+	text-align: center;
+	font-family: Inter;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 102.595%;
+	padding-bottom: 26px;
+}
+.form_input{
+	display: flex;
+	width: 530px;
+	padding: 13px 23px;
+	align-items: center;
+	box-sizing: border-box;
+
+	border-radius: 19px;
+	border: 3px solid var(--RED, #FF4343);
+	background: var(--White, #FFF);
+
+	color: #000;
+	font-family: Inter;
+	font-size: 31px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 102.595%;
+
+	margin-bottom: 15px;
+	transition: all 0.5s ease 0s;
+}
+.form_input:focus{
+	box-shadow: 0px 0px 45px 5px rgba(255, 67, 67, 0.30);
+}
+p{
+	margin: 0;
+}
+.buttonSubmit{
+	width: 530px;
+	height: 65px;
+	padding: 13px 90px;
+	box-sizing: border-box;
+
+	border-radius: 19px;
+	background: #FF4343;
+
+/*	box-shadow: 0px 0px 45px 13px rgba(255, 67, 67, 0.30);*/
+
+	outline: none;
+	border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+.buttonSubmit:hover{
+	background: #FFF;
+	box-shadow: 0px 0px 45px 5px rgba(255, 67, 67, 0.30);
+}
+.buttonSubmit:hover .submitButtonText{
+	color: #FF4343;
+}
+.submitButtonText{
+	width: 380px;
+	color: #FFF;
+	text-align: center;
+	font-family: Inter;
+	font-size: 38px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 102.595%;
+
+	white-space: nowrap;
+}
+form * {
+	outline: none;
 }
