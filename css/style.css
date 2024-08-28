@@ -413,7 +413,7 @@ h1{
 .frontButton{
 	display: flex;
 	width: 560px;
-	padding: 13px 90px;
+/* 	padding: 13px 90px; */
 	box-sizing: border-box;
 	justify-content: center;
 	align-items: center;
